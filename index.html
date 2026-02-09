@@ -20,10 +20,14 @@ body{height:100vh;display:flex;justify-content:center;align-items:center;backgro
 <div class="box">
     <span id="text"></span><span id="cursor" class="cursor"></span>
 </div>
-<audio id="music" loop>
-    <source src="in-love.mp3" type="audio/mpeg">
+<audio id="music" loop preload="auto">
+    <source src="./in-love.mp3" type="audio/mpeg">
 </audio>
+
 <script>
+// ========== KIỂM TRA NHẠC ==========
+console.log("🔊 Kiểm tra file nhạc...");
+
 const messages = [
     "Có thể cậu không biết, nhưng mình đã suy nghĩ rất lâu trước khi viết những dòng này.",
     "Mỗi lần nói chuyện với cậu, mình đều cảm thấy vui hơn một chút.",
